@@ -1,0 +1,69 @@
+body {
+    header {
+        width: 100%;
+        height: 35px;
+        background: #aaa;
+        display: flex;
+
+        input {
+            margin: 5px;
+            width: 70%;
+            height: 65%;
+            
+
+        }
+        .branch{
+            width: 25%;
+            margin: 5px;
+            background: #ccc;
+            text-align: center;
+        }
+    }
+    .box{
+        
+        .header{
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px #fff solid;
+            span{
+                width: 20%;
+                text-align: center;
+            }
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            dl{
+                width: 47%;
+                margin: 5px;
+                dt{
+                    pointer-events: none;
+                }
+
+                dd{
+                 
+                   font-size: 12px;
+                   pointer-events: none;
+                   .price{
+                    color: red;
+                    font-weight: 900;
+                    display: flex;
+                    flex-direction: row;
+
+          
+                   }
+                   .sold{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    
+                   }
+                }
+
+            }
+        }
+        
+    }
+}
