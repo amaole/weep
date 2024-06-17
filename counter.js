@@ -5,7 +5,7 @@ export default defineConfig({
   //公共项
   publicDir: 'public',
 
-
+base:'/weep',
 
   define: {
     __APP_VERSION__: JSON.stringify('v1.0.0'),
