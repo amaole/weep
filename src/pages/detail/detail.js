@@ -11,15 +11,15 @@ console.log(curdata)
 
 $(".box").innerHTML=`
 <div class="img">
-            <img src="${curdata[0].img}" alt="">
+            <img src="${curdata.img}" alt="">
         </div>
-        <h2>￥${curdata[0].price} <span>促销价</span></h2>
+        <h2>￥${curdata.price} <span>促销价</span></h2>
         <p>价格<span>￥152</span> </p>
         <div class="main">
-        ${curdata[0].title}
+        ${curdata.title}
         </div>
         <div class="shop">
-            <span>快递：0.00</span><span>月销量${curdata[0].sold}件</span><span>天津</span>
+            <span>快递：0.00</span><span>月销量${curdata.sold}件</span><span>天津</span>
         </div>
 `
 
