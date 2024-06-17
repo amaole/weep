@@ -47,7 +47,18 @@ $(".deformation").addEventListener("click",(e)=>{
 
 })
 
+document.addEventListener("click",(e)=>{
+    if(e.target.nodeName==="DL"){
+        const i=e.target.getAttribute("id")
+   
+        localStorage.setItem("index",JSON.stringify(i))
+        console.log(JSON.parse(JSON.stringify(i)))
+        // const f=JSON.parse(localStorage.getItem("id")).slice(JSON.stringify(i),1)
+        // console.log(f)
+        location.assign("./detail.html")
 
+    }
+})
 
 // 渲染
 function readtable(data) {
@@ -73,20 +84,24 @@ async function jumpPage(url) {
     // let price=res.data.items.price
     // console.log(price)
     $(".price").addEventListener("click",function(){
+        
         if (fals) {
             res.data.items.sort((a, b) => {
                 return a.price - b.price
             })
             readtable(res.data.items)
-            fals === false
+            fals = false
+           
         }else{
             res.data.items.sort((a, b) => {
                 return  b.price-a.price 
             })
             readtable(res.data.items)
-            fals === true
-        }
+            fals = true
+            
+        } 
     })
+    localStorage.setItem("id",JSON.stringify(res.data.items))
     }
 
 // jumpPage("https://zyxcl.xyz/exam_api/zh")

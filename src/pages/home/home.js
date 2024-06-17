@@ -44,7 +44,6 @@ document.addEventListener("click",(e)=>{
    
         localStorage.setItem("index",JSON.stringify(i))
         console.log(JSON.parse(JSON.stringify(i)))
-
         // const f=JSON.parse(localStorage.getItem("id")).slice(JSON.stringify(i),1)
         // console.log(f)
         location.assign("./detail.html")
