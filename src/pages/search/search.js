@@ -43,7 +43,7 @@ $(".header").addEventListener("click", function (e) {
 
 // 跳转
 $(".deformation").addEventListener("click",(e)=>{
-    location.assign("/")
+    location.assign("./")
 
 })
 
